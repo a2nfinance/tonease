@@ -1,0 +1,341 @@
+;; =============== storage =============================
+;; storage$_ sender:MsgAddressInt
+;;           recipient:MsgAddressInt
+;;           pay_amount:Grams
+;;           remaining_balance:Grams
+;;           unlock_amount_per_time:Grams
+;;           start_time:uint32
+;;           cancel_permission:uint8
+;;           transfer_permission:uint8           
+;;           unlock_every:uint32
+;;           number_of_unlocks:uint32
+;;           prepaid_percentage:uint16
+;;           status:uint8
+;;           request_id:uint32 = Storage;
+
+(slice, slice, int, int, int, int, int, int, int, int, int, int, int) load_data() inline {
+    var ds = get_data().begin_parse();
+    return (
+        ds~load_msg_addr(),
+        ds~load_msg_addr(), 
+        ds~load_grams(),
+        ds~load_grams(),
+        ds~load_grams(),
+        ds~load_uint(32), 
+        ds~load_uint(8), 
+        ds~load_uint(8),
+        ds~load_uint(32), 
+        ds~load_uint(32), 
+        ds~load_uint(16), 
+        ds~load_uint(8),
+        ds~load_uint(32)
+    );
+}
+
+() save_data(
+    slice sender, 
+    slice recipient, 
+    int pay_amount,
+    int remaining_balance, 
+    int unlock_amount_per_time, 
+    int start_time, 
+    int cancel_permission,
+    int transfer_permission,
+    int unlock_every,
+    int number_of_unlocks,
+    int prepaid_percentage,
+    int status,
+    int request_id
+) impure inline {
+    set_data(
+        begin_cell()
+            .store_slice(sender)
+            .store_slice(recipient)
+            .store_grams(pay_amount)
+            .store_grams(remaining_balance)
+            .store_grams(unlock_amount_per_time)
+            .store_uint(start_time, 32)
+            .store_uint(cancel_permission, 8)
+            .store_uint(transfer_permission, 8)
+            .store_uint(unlock_every, 32)
+            .store_uint(number_of_unlocks, 32)
+            .store_uint(prepaid_percentage, 16)
+            .store_uint(status, 8)
+            .store_uint(request_id, 32)
+            .end_cell()
+    );
+}
+
+;; Check user privilege
+;; 0 - Sender only
+;; 1 - Recipient only
+;; 2 - Both
+;; 3 - None
+
+int check_permission(slice s_addr, slice sender, slice recipient, int permission) {
+    int allow = 0;
+    if (permission == 0) {
+        if (equal_slice_bits(sender, s_addr)) {
+            allow = 1;
+        }
+    } 
+        
+    if (permission == 1) {
+        if (equal_slice_bits(recipient, s_addr)) {
+            allow = 1;
+        }
+    }
+
+    if (permission == 2) {
+        if (equal_slice_bits(recipient, s_addr) | equal_slice_bits(sender, s_addr)) {
+            allow = 1;
+        }
+    }
+
+    return allow;
+}
+
+;; Send TON to an address
+() forward_funds(slice recipient, int amount, int op) impure inline_ref {
+    cell msg = begin_cell()
+        .store_uint(0x18, 6)
+        .store_slice(recipient)
+        .store_coins(amount)
+        .store_uint(0, 1 + 4 + 4 + 64 + 32 + 1 + 1)
+        .store_uint(0, 32)
+        .store_slice("From SM")
+    .end_cell();
+    send_raw_message(msg, 64);
+}
+
+
+;; =============== messages =============================
+() recv_internal(int msg_value, cell in_msg_full, slice in_msg_body) impure {
+    if (in_msg_body.slice_empty?()) { ;; ignore all empty messages
+        return ();
+    }
+
+    slice cs = in_msg_full.begin_parse();
+    int flags = cs~load_uint(4); ;; the first four bits of serialized message contain certain flags, one of which indicates whether the message is bounced
+    ;; ;; a message is bounced when a contract receives a bounceable message and throws during its processing
+    ;; ;; the bounced message is then returned to sender with `bounced` bit set, this is a way to handle errors in TON
+
+    if (flags & 1) { ;; ignore all bounced messages
+        return ();
+    }
+
+    var s_addr = cs~load_msg_addr();
+
+    int op = in_msg_body~load_uint(32);
+    var (
+        sender, 
+        recipient, 
+        pay_amount, 
+        remaining_balance, 
+        unlock_amount_per_time, 
+        start_time, 
+        cancel_permission, 
+        transfer_permission,
+        unlock_every,
+        number_of_unlocks,
+        prepaid_percentage,
+        status,
+        request_id
+    ) = load_data();
+
+    ;; Count number of unlocks
+    int count_unlock = (now() - start_time) / unlock_every;
+    if (count_unlock > number_of_unlocks) {
+        count_unlock = number_of_unlocks;
+    }
+    if (count_unlock < 0) {
+        count_unlock = 0;
+    }
+
+    ;; Calculate unlocked amount
+    int unlocked_amount = count_unlock * unlock_amount_per_time;
+
+    ;; Calculate prepaid amount
+    int prepaid_amount = (number_of_unlocks * unlock_amount_per_time * prepaid_percentage) / 10000;
+
+    if (unlocked_amount <= 0) {
+        unlocked_amount = 0;
+    } else {
+        unlocked_amount += prepaid_amount;
+    }
+
+    ;; Calculate available amount an user can withdraw.
+    ;; Maximum of available_amount is equal to payment amount.
+    int available_amount = unlocked_amount - (pay_amount - remaining_balance);
+
+    ;; op == 1: withdraw action
+    ;; op == 2: transfer action
+    ;; op == 3: cancel action
+    if ( op == 1 ) {
+        if (equal_slice_bits(recipient, s_addr)) {
+            int amount = in_msg_body~load_grams();
+            
+            if (amount <= available_amount) {
+                remaining_balance -= amount;
+            } else {
+                return ();
+            }
+            
+            ;; If a user withdrew all the amount
+            if (remaining_balance <= 0) {
+                status = 3;
+            }
+
+            forward_funds(recipient, amount, op);
+            
+            save_data(
+                sender,
+                recipient,
+                pay_amount,
+                remaining_balance,
+                unlock_amount_per_time,
+                start_time,
+                cancel_permission,
+                transfer_permission,
+                unlock_every,
+                number_of_unlocks,
+                prepaid_percentage,
+                status,
+                request_id
+            );
+        } else {
+            return ();
+        }
+        
+
+    }
+
+    if (op == 2) {
+
+        ;; Check user privilege
+        int allow = check_permission(s_addr, sender, recipient, transfer_permission);
+        
+        if (allow) {
+
+            if (~(status == 1)) {
+                return ();
+            }
+            slice new_recipient = in_msg_body~load_msg_addr();
+
+            ;; New recipient must be different from old recipient.
+            if (equal_slice_bits(recipient, new_recipient)) {
+                return ();
+            }
+
+            if (available_amount > 0) {
+
+                remaining_balance -= available_amount;
+
+                if (remaining_balance <= 0) {
+                    status = 3;
+                }
+
+                ;; Transfer available amount to old recipient
+                forward_funds(recipient, available_amount, op);
+                
+                
+            }
+
+            save_data(
+                sender,
+                new_recipient,
+                pay_amount,
+                remaining_balance,
+                unlock_amount_per_time,
+                start_time,
+                cancel_permission,
+                transfer_permission,
+                unlock_every,
+                number_of_unlocks,
+                prepaid_percentage,
+                status,
+                request_id
+            );
+        } else {
+            return ();
+        }
+    }
+
+    if (op == 3) {
+        if (~(status == 1)) {
+            return ();
+        }
+
+        ;; Check user privilege
+        int allow = check_permission(s_addr, sender, recipient, cancel_permission);
+
+        if (allow) {
+            if (available_amount > 0) {
+
+                remaining_balance -= available_amount;
+
+                ;; Transfer available amount to recipient
+                forward_funds(recipient, available_amount, op);
+
+                if (remaining_balance > 0) {
+                    ;; Transfer remaining amount to payment sender
+                    forward_funds(sender, remaining_balance, op);
+                }
+                
+                save_data(
+                    sender,
+                    recipient,
+                    pay_amount,
+                    0,
+                    unlock_amount_per_time,
+                    start_time,
+                    cancel_permission,
+                    transfer_permission,
+                    unlock_every,
+                    number_of_unlocks,
+                    prepaid_percentage,
+                    2,
+                    request_id
+                );
+            }
+        } else {
+            return ();
+        }
+
+    }
+}
+
+;; =============== getters =============================
+
+(slice, slice, int, int, int, int, int, int, int, int, int, int, int) get_payment_data() method_id {
+    var (
+        sender, 
+        recipient, 
+        pay_amount, 
+        remaining_balance, 
+        unlock_amount_per_time, 
+        start_time, 
+        cancel_permission, 
+        transfer_permission,
+        unlock_every,
+        number_of_unlocks,
+        prepaid_percentage,
+        status,
+        request_id
+    ) = load_data();
+    return (
+        sender, 
+        recipient, 
+        pay_amount, 
+        remaining_balance, 
+        unlock_amount_per_time, 
+        start_time, 
+        cancel_permission, 
+        transfer_permission,
+        unlock_every,
+        number_of_unlocks,
+        prepaid_percentage,
+        status,
+        request_id
+    );
+}

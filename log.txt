@@ -1,0 +1,3742 @@
+  console.log
+    wallet 2 address: EQAze65lwxUmLMLwxu5auY1cqv2V_JpjidDt9d3fF0dgxQqc
+
+      at src/test/contract/tonease.spec.ts:42:17
+
+  console.log
+    {
+      address: EQDoN9yNZ1lsBW7lKEiNx73nGWJ7mzKRMTXWlAlGmRqj77P_,
+      send: [AsyncFunction: send]
+    }
+
+      at TonEase.<anonymous> (src/wrapper/tonease.ts:45:17)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:37.711000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:37.711000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:37.711000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:37.713000][transaction.cpp:596]	storage paid for a message: 22 cells, 7167 bits
+    [ 4][t 0][2023-02-23 16:27:37.713000][transaction.cpp:606]	computed fwd fees = 10367000 + 0
+    [ 4][t 0][2023-02-23 16:27:37.713000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:37.713000][transaction.cpp:1003]	HASH(in_msg_state) = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF, account_state_hash = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:37.713000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:37.714000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169657 55834626422 1000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999989633000 (null) ] CS{Cell{006dc00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:37.714000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:37.714000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:37.714000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:37.715000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:37.715000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999986050000ng
+    [ 4][t 0][2023-02-23 16:27:37.715000][transaction.cpp:1562]	storage paid for a message: 11 cells, 5415 bits
+    [ 4][t 0][2023-02-23 16:27:37.715000][transaction.cpp:1570]	computed fwd fees = 7515000 + 0
+    [ 4][t 0][2023-02-23 16:27:37.715000][transaction.cpp:2304]	setting address rewriting info for newly-activated account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:37.742000][transaction.cpp:320]	unpacking account 77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13
+    [ 4][t 0][2023-02-23 16:27:37.742000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:37.742000][transaction.cpp:381]	end of Account.unpack() for 0:77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13 (balance = 0ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:37.742000][transaction.cpp:849]	gas limits: max=10000, limit=10000, credit=0
+    [ 4][t 0][2023-02-23 16:27:37.742000][transaction.cpp:1003]	HASH(in_msg_state) = 77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13, account_state_hash = 77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13
+    [ 4][t 0][2023-02-23 16:27:37.743000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:37.743000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169657 55834626422 2000000 10642697289384528481621316620490067436973439663899088710405337606542097599261 [ 10000000 (null) ] CS{Cell{005fc0077164e09eb78229b4d51a0f95baacdc89fd751d6ac86106b32fa080ec8111e1300000000000000000000000000004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:37.743000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:37.743000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:37.743000][transaction.cpp:1077]	steps: 12 gas: used=559, max=10000, limit=10000, credit=0
+    [ 3][t 0][2023-02-23 16:27:37.743000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:37.743000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=9441000ng
+    [ 4][t 0][2023-02-23 16:27:37.744000][transaction.cpp:2304]	setting address rewriting info for newly-activated account 77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    sending 0.02 TON
+
+      at src/test/contract/tonease.spec.ts:49:17
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:194]	last_paid=1677169657; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999968535000ng ; last_trans_lt = 1000000..1000002)
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:596]	storage paid for a message: 2 cells, 432 bits
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:606]	computed fwd fees = 1632000 + 0
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:37.789000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:37.790000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169657 55834626422 3000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999966903000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fc800000000003d0909c0e35fa8b998761340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999963320000ng
+    [ 4][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:37.790000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:37.801000][transaction.cpp:320]	unpacking account 77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13
+    [ 4][t 0][2023-02-23 16:27:37.801000][transaction.cpp:194]	last_paid=1677169657; cells=12 bits=5514 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:37.801000][transaction.cpp:381]	end of Account.unpack() for 0:77164E09EB78229B4D51A0F95BAACDC89FD751D6AC86106B32FA080EC8111E13 (balance = 9441000ng ; last_trans_lt = 2000000..2000001)
+    [ 4][t 0][2023-02-23 16:27:37.801000][transaction.cpp:849]	gas limits: max=29441, limit=20000, credit=0
+    [ 4][t 0][2023-02-23 16:27:37.801000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:37.801000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:37.802000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169657 55834626422 4000000 10642697289384528481621316620490067436973439663899088710405337606542097599261 [ 29441000 (null) ] CS{Cell{026dc0077164e09eb78229b4d51a0f95baacdc89fd751d6ac86106b32fa080ec8111e132188562831fbc9fc800000000007a1204e403ba1340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:37.802000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:37.802000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:37.802000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29441, limit=20000, credit=0
+    [ 3][t 0][2023-02-23 16:27:37.802000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:37.802000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28882000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:37.841000][mc-config.cpp:260]	needSpecialSmc flag set
+    [ 4][t 0][2023-02-23 16:27:37.841000][mc-config.cpp:266]	smc dictionary created
+    [ 4][t 0][2023-02-23 16:27:37.841000][mc-config.cpp:469]	workchain description dictionary created
+    [ 4][t 0][2023-02-23 16:27:37.841000][mc-config.cpp:1972]	unpacked info for workchain 0: basic=true, active=true, accept_msgs=true, min_split=0, max_split=6
+    [ 4][t 0][2023-02-23 16:27:37.841000][SmartContract.cpp:128]	VM stack:
+     [ 81451 ] 
+    [ 4][t 0][2023-02-23 16:27:37.841000][SmartContract.cpp:150]	VM log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+    [ 4][t 0][2023-02-23 16:27:37.842000][SmartContract.cpp:153]	VM stack:
+     [ CS{Cell{00c9801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b401004c4b400e625a018fde4f9400000000000400000008000004000000060} bits: 0..267; refs: 0..0} CS{Cell{00c9801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b401004c4b400e625a018fde4f9400000000000400000008000004000000060} bits: 267..534; refs: 0..0} 20000000 20000000 10000000 1677169637 0 0 1 2 0 1 1 ] 
+    [ 4][t 0][2023-02-23 16:27:37.842000][SmartContract.cpp:154]	VM exit code: 0
+    [ 4][t 0][2023-02-23 16:27:37.842000][SmartContract.cpp:155]	VM accepted: true
+    [ 4][t 0][2023-02-23 16:27:37.842000][SmartContract.cpp:156]	VM success: true
+    [ 4][t 0][2023-02-23 16:27:37.842000][SmartContract.cpp:166]	output actions:
+    out_list_empty
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:166:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:173:25)
+
+  console.log
+    wallet 2 address: EQAze65lwxUmLMLwxu5auY1cqv2V_JpjidDt9d3fF0dgxQqc
+
+      at src/test/contract/tonease.spec.ts:42:17
+
+  console.log
+    {
+      address: EQDoN9yNZ1lsBW7lKEiNx73nGWJ7mzKRMTXWlAlGmRqj77P_,
+      send: [AsyncFunction: send]
+    }
+
+      at TonEase.<anonymous> (src/wrapper/tonease.ts:45:17)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.167000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:38.167000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.167000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:38.168000][transaction.cpp:596]	storage paid for a message: 22 cells, 7167 bits
+    [ 4][t 0][2023-02-23 16:27:38.168000][transaction.cpp:606]	computed fwd fees = 10367000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.168000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:38.168000][transaction.cpp:1003]	HASH(in_msg_state) = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF, account_state_hash = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:38.168000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.169000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 1000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999989633000 (null) ] CS{Cell{006dc00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.169000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.170000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.170000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.170000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.170000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999986050000ng
+    [ 4][t 0][2023-02-23 16:27:38.170000][transaction.cpp:1562]	storage paid for a message: 11 cells, 5415 bits
+    [ 4][t 0][2023-02-23 16:27:38.170000][transaction.cpp:1570]	computed fwd fees = 7515000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.170000][transaction.cpp:2304]	setting address rewriting info for newly-activated account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:320]	unpacking account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:381]	end of Account.unpack() for 0:A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 (balance = 0ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:849]	gas limits: max=10000, limit=10000, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:1003]	HASH(in_msg_state) = A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35, account_state_hash = A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 2000000 39126537289088674692524632771906976651450517629203646558048344348987311677269 [ 10000000 (null) ] CS{Cell{005fc00a29307715daef27c6a1c9597d10019e39c7391ef01ff37566edee8f6fcbd0c3500000000000000000000000000004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.186000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.187000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.187000][transaction.cpp:1077]	steps: 12 gas: used=559, max=10000, limit=10000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.187000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.187000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=9441000ng
+    [ 4][t 0][2023-02-23 16:27:38.187000][transaction.cpp:2304]	setting address rewriting info for newly-activated account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.234000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:38.235000][transaction.cpp:194]	last_paid=1677169658; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.235000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999968535000ng ; last_trans_lt = 1000000..1000002)
+    [ 4][t 0][2023-02-23 16:27:38.235000][transaction.cpp:596]	storage paid for a message: 2 cells, 432 bits
+    [ 4][t 0][2023-02-23 16:27:38.235000][transaction.cpp:606]	computed fwd fees = 1632000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.235000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:38.235000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.236000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.236000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 3000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999966903000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fd000000000003d0909c0e35fa8b998761340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.236000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.236000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.237000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.237000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.237000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999963320000ng
+    [ 4][t 0][2023-02-23 16:27:38.237000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:38.237000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.246000][transaction.cpp:320]	unpacking account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.246000][transaction.cpp:194]	last_paid=1677169658; cells=12 bits=5514 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.246000][transaction.cpp:381]	end of Account.unpack() for 0:A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 (balance = 9441000ng ; last_trans_lt = 2000000..2000001)
+    [ 4][t 0][2023-02-23 16:27:38.246000][transaction.cpp:849]	gas limits: max=29441, limit=20000, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.246000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.246000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.247000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 4000000 39126537289088674692524632771906976651450517629203646558048344348987311677269 [ 29441000 (null) ] CS{Cell{026dc00a29307715daef27c6a1c9597d10019e39c7391ef01ff37566edee8f6fcbd0c352188562831fbc9fd000000000007a1204e403ba1340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.247000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.247000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.247000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29441, limit=20000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.247000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.247000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28882000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.288000][transaction.cpp:320]	unpacking account 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5
+    [ 4][t 0][2023-02-23 16:27:38.288000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.288000][transaction.cpp:381]	end of Account.unpack() for 0:337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5 (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:596]	storage paid for a message: 11 cells, 1806 bits
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:606]	computed fwd fees = 3906000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:1003]	HASH(in_msg_state) = 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5, account_state_hash = 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 5000000 56251258262539587739965633052182039238715316488926212919521785096057343968594 [ 999999996094000 (null) ] CS{Cell{006dc00337bae65c315262cc2f0c6ee5ab98d5caafd95fc9a6389d0edf5dddf174760c5000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.289000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.290000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.290000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.290000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.290000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999992511000ng
+    [ 4][t 0][2023-02-23 16:27:38.290000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:38.290000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.290000][transaction.cpp:2304]	setting address rewriting info for newly-activated account 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.299000][transaction.cpp:320]	unpacking account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.299000][transaction.cpp:194]	last_paid=1677169658; cells=12 bits=5522 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.299000][transaction.cpp:381]	end of Account.unpack() for 0:A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 (balance = 28882000ng ; last_trans_lt = 4000000..4000001)
+    [ 4][t 0][2023-02-23 16:27:38.300000][transaction.cpp:849]	gas limits: max=35882, limit=7000, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.300000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.300000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.300000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 6000000 39126537289088674692524632771906976651450517629203646558048344348987311677269 [ 35882000 (null) ] CS{Cell{026fc00a29307715daef27c6a1c9597d10019e39c7391ef01ff37566edee8f6fcbd0c352188564831fbc9fd00000000000f42405006e2d141340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.300000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.301000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.301000][transaction.cpp:1077]	steps: 159 gas: used=5763, max=35882, limit=7000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.301000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.301000][transaction.cpp:1110]	gas fees: 5763000 = 65536000 * 5763 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=30119000ng
+    [ 4][t 0][2023-02-23 16:27:38.301000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:38.301000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute CTOS
+    execute LDU 4
+    execute SWAP
+    execute PUSHINT 1
+    execute AND
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute LDMSGADDR
+    execute DROP
+    execute SWAP
+    execute LDU 32
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute NOW
+    execute PUSH s8
+    execute SUB
+    execute PUSH s5
+    execute DIV/MOD 4
+    execute PUSH2 s0,s4
+    execute GREATER
+    execute PUSHCONT x3023
+    execute IF
+    execute DROP
+    execute PUSH s3
+    execute implicit RET
+    execute DUP
+    execute LESSINT 0
+    execute PUSHCONT x3070
+    execute IF
+    execute PUSH s9
+    execute MUL
+    execute PUSH2 s4,s9
+    execute MUL
+    execute PUSH s4
+    execute MUL
+    execute PUSHINT 10000
+    execute DIV/MOD 4
+    execute OVER
+    execute LESSINT 1
+    execute PUSHCONT x5B70
+    execute PUSHCONT xA0
+    execute IFELSE
+    execute ADD
+    execute implicit RET
+    execute PUSH2 s11,s10
+    execute SUB
+    execute SUB
+    execute PUSH s15
+    execute EQINT 1
+    execute IFREF (206CDFBC76E11D4AA2DFAF83526E82157F5BA24D75F55D7FEDAA324267BFA365)
+    execute PUSH s12
+    execute PUSH s17
+    execute SDEQ
+    execute PUSHCONT x5F0F5BDB31
+    execute IFNOTJMP
+    execute XCHG s14
+    execute LDGRAMS
+    execute PUSH2 s1,s15
+    execute LEQ
+    execute PUSHCONT x5F0F5F03DB31
+    execute IFNOTJMP
+    execute XCPU s11,s1
+    execute SUB
+    execute DUP
+    execute LESSINT 1
+    execute PUSHCONT x7334
+    execute IF
+    execute PUXC s13,s1
+    execute PUSH s17
+    execute CALLREF (38DEF072A544447F9F0D1FED6A1AB554C16E6402C5C8F6A20056746BD9082151)
+    execute DROP
+    execute PUSHINT 0
+    execute DUP
+    execute PUSHINT 24
+    execute NEWC
+    execute STU 6
+    execute XCHG2 s0,s4
+    execute STSLICER
+    execute ROT
+    execute STGRAMS
+    execute XCHG s1,s2
+    execute STU 107
+    execute STU 32
+    execute PUSHSLICE x46726F6D20534D
+    execute STSLICER
+    execute ENDC
+    execute PUSHINT 64
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute PUSH3 s13,s12,s11
+    execute PUSH3 s3,s12,s11
+    execute PUSH3 s13,s12,s11
+    execute PUSH3 s13,s12,s11
+    execute PUSH s13
+    execute NEWC
+    execute XCHG2 s0,s13
+    execute STSLICER
+    execute XCHG2 s0,s11
+    execute STSLICER
+    execute XCHG2 s0,s9
+    execute STGRAMS
+    execute XCHG2 s0,s7
+    execute STGRAMS
+    execute XCHG2 s0,s5
+    execute STGRAMS
+    execute XCHG s1,s3
+    execute STU 32
+    execute STU 8
+    execute STU 8
+    execute STU 32
+    execute STU 32
+    execute STU 16
+    execute STU 8
+    execute STU 32
+    execute ENDC
+    execute POP c4
+    execute XCHG s10
+    execute XCHG s14
+    execute implicit RET
+    execute PUSH s15
+    execute EQINT 2
+    execute PUSHCONT x3E
+    execute IFREFELSE (9671E2B6A09C6331361633C8C88624A2B879E517CA7D1C30D99213A5A84AD534)
+    execute POP s14
+    execute implicit RET
+    execute PUSH s14
+    execute EQINT 3
+    execute implicit JMPREF
+    execute PUSHCONT x01C001B3945F0FDB31E0543EBA27F003945F0EDB31E12BC2008F51517BA1529C2DDB3C2AC2008E855449BCDB3C923A3AE2107A10691058700810471036454043307201C8500DCF16500BCF165009FA025007FA025005FA0213CB1FCB07CB07CB1FCB1FCB0FCB07CB1FC9ED54925F0EE2,2
+    execute PUSHCONT x5F0F30
+    execute IFELSE
+    execute BLKDROP 15
+    execute DROP
+    execute implicit RET
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.310000][transaction.cpp:320]	unpacking account 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5
+    [ 4][t 0][2023-02-23 16:27:38.310000][transaction.cpp:194]	last_paid=1677169658; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.310000][transaction.cpp:381]	end of Account.unpack() for 0:337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5 (balance = 999999984511000ng ; last_trans_lt = 5000000..5000002)
+    [ 4][t 0][2023-02-23 16:27:38.310000][transaction.cpp:849]	gas limits: max=1000000, limit=10237, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.310000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.310000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.311000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 7000000 56251258262539587739965633052182039238715316488926212919521785096057343968594 [ 999999994748000 (null) ] CS{Cell{0275c00337bae65c315262cc2f0c6ee5ab98d5caafd95fc9a6389d0edf5dddf174760c5214816b431fbc9fd00000000001312d09c0e35fa8f68a061340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.311000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.311000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.311000][transaction.cpp:1077]	steps: 5 gas: used=409, max=1000000, limit=10237, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.311000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.311000][transaction.cpp:1110]	gas fees: 409000 = 65536000 * 409 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999994339000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.342000][mc-config.cpp:260]	needSpecialSmc flag set
+    [ 4][t 0][2023-02-23 16:27:38.342000][mc-config.cpp:266]	smc dictionary created
+    [ 4][t 0][2023-02-23 16:27:38.342000][mc-config.cpp:469]	workchain description dictionary created
+    [ 4][t 0][2023-02-23 16:27:38.342000][mc-config.cpp:1972]	unpacked info for workchain 0: basic=true, active=true, accept_msgs=true, min_split=0, max_split=6
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:128]	VM stack:
+     [ 81451 ] 
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:150]	VM log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:153]	VM stack:
+     [ CS{Cell{00c7801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b400e625a00e625a018fde4f9800000000000400000008000004000000060} bits: 0..267; refs: 0..0} CS{Cell{00c7801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b400e625a00e625a018fde4f9800000000000400000008000004000000060} bits: 267..534; refs: 0..0} 20000000 10000000 10000000 1677169638 0 0 1 2 0 1 1 ] 
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:154]	VM exit code: 0
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:155]	VM accepted: true
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:156]	VM success: true
+    [ 4][t 0][2023-02-23 16:27:38.342000][SmartContract.cpp:166]	output actions:
+    out_list_empty
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:166:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:173:25)
+
+  console.log
+    wallet 2 address: EQAze65lwxUmLMLwxu5auY1cqv2V_JpjidDt9d3fF0dgxQqc
+
+      at src/test/contract/tonease.spec.ts:42:17
+
+  console.log
+    {
+      address: EQDoN9yNZ1lsBW7lKEiNx73nGWJ7mzKRMTXWlAlGmRqj77P_,
+      send: [AsyncFunction: send]
+    }
+
+      at TonEase.<anonymous> (src/wrapper/tonease.ts:45:17)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.766000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:38.766000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.766000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:38.767000][transaction.cpp:596]	storage paid for a message: 22 cells, 7167 bits
+    [ 4][t 0][2023-02-23 16:27:38.768000][transaction.cpp:606]	computed fwd fees = 10367000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.768000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:38.768000][transaction.cpp:1003]	HASH(in_msg_state) = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF, account_state_hash = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:38.768000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.769000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 1000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999989633000 (null) ] CS{Cell{006dc00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.769000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.769000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.769000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.770000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.770000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999986050000ng
+    [ 4][t 0][2023-02-23 16:27:38.770000][transaction.cpp:1562]	storage paid for a message: 11 cells, 5415 bits
+    [ 4][t 0][2023-02-23 16:27:38.770000][transaction.cpp:1570]	computed fwd fees = 7515000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.770000][transaction.cpp:2304]	setting address rewriting info for newly-activated account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.785000][transaction.cpp:320]	unpacking account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.785000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.785000][transaction.cpp:381]	end of Account.unpack() for 0:A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 (balance = 0ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:38.786000][transaction.cpp:849]	gas limits: max=10000, limit=10000, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.786000][transaction.cpp:1003]	HASH(in_msg_state) = A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35, account_state_hash = A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.786000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.786000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 2000000 39126537289088674692524632771906976651450517629203646558048344348987311677269 [ 10000000 (null) ] CS{Cell{005fc00a29307715daef27c6a1c9597d10019e39c7391ef01ff37566edee8f6fcbd0c3500000000000000000000000000004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.786000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.786000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.786000][transaction.cpp:1077]	steps: 12 gas: used=559, max=10000, limit=10000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.786000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.787000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=9441000ng
+    [ 4][t 0][2023-02-23 16:27:38.787000][transaction.cpp:2304]	setting address rewriting info for newly-activated account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.836000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:194]	last_paid=1677169658; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999968535000ng ; last_trans_lt = 1000000..1000002)
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:596]	storage paid for a message: 2 cells, 432 bits
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:606]	computed fwd fees = 1632000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.837000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.838000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 3000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999966903000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fd000000000003d0909c0e35fa8b998761340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999963320000ng
+    [ 4][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:38.838000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.847000][transaction.cpp:320]	unpacking account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.847000][transaction.cpp:194]	last_paid=1677169658; cells=12 bits=5514 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.847000][transaction.cpp:381]	end of Account.unpack() for 0:A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 (balance = 9441000ng ; last_trans_lt = 2000000..2000001)
+    [ 4][t 0][2023-02-23 16:27:38.847000][transaction.cpp:849]	gas limits: max=29441, limit=20000, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.847000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.847000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.848000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 4000000 39126537289088674692524632771906976651450517629203646558048344348987311677269 [ 29441000 (null) ] CS{Cell{026dc00a29307715daef27c6a1c9597d10019e39c7391ef01ff37566edee8f6fcbd0c352188562831fbc9fd000000000007a1204e403ba1340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.848000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.848000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.848000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29441, limit=20000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.848000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.848000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28882000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.892000][transaction.cpp:320]	unpacking account B7838B1356C4F613FC57CF68454EBBB4F87B1FCB70B39641D5D167F70A0E5122
+    [ 4][t 0][2023-02-23 16:27:38.892000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.892000][transaction.cpp:381]	end of Account.unpack() for 0:B7838B1356C4F613FC57CF68454EBBB4F87B1FCB70B39641D5D167F70A0E5122 (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:596]	storage paid for a message: 11 cells, 1806 bits
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:606]	computed fwd fees = 3906000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:1003]	HASH(in_msg_state) = B7838B1356C4F613FC57CF68454EBBB4F87B1FCB70B39641D5D167F70A0E5122, account_state_hash = B7838B1356C4F613FC57CF68454EBBB4F87B1FCB70B39641D5D167F70A0E5122
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 5000000 93864288828608131152709623962984529673184342480694885586906057058427949905749 [ 999999996094000 (null) ] CS{Cell{006dc00b7838b1356c4f613fc57cf68454ebbb4f87b1fcb70b39641d5d167f70a0e5122000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.893000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.894000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.894000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.894000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.894000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999992511000ng
+    [ 4][t 0][2023-02-23 16:27:38.894000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:38.894000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+    [ 4][t 0][2023-02-23 16:27:38.894000][transaction.cpp:2304]	setting address rewriting info for newly-activated account B7838B1356C4F613FC57CF68454EBBB4F87B1FCB70B39641D5D167F70A0E5122 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.902000][transaction.cpp:320]	unpacking account A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35
+    [ 4][t 0][2023-02-23 16:27:38.902000][transaction.cpp:194]	last_paid=1677169658; cells=12 bits=5522 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:38.902000][transaction.cpp:381]	end of Account.unpack() for 0:A29307715DAEF27C6A1C9597D10019E39C7391EF01FF37566EDEE8F6FCBD0C35 (balance = 28882000ng ; last_trans_lt = 4000000..4000001)
+    [ 4][t 0][2023-02-23 16:27:38.902000][transaction.cpp:849]	gas limits: max=35882, limit=7000, credit=0
+    [ 4][t 0][2023-02-23 16:27:38.902000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:38.902000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:38.903000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169658 55834626422 6000000 39126537289088674692524632771906976651450517629203646558048344348987311677269 [ 35882000 (null) ] CS{Cell{026fc00a29307715daef27c6a1c9597d10019e39c7391ef01ff37566edee8f6fcbd0c352188564831fbc9fd00000000000f42405006e2d141340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:38.903000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:38.903000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:38.903000][transaction.cpp:1077]	steps: 82 gas: used=2370, max=35882, limit=7000, credit=0
+    [ 3][t 0][2023-02-23 16:27:38.903000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:38.903000][transaction.cpp:1110]	gas fees: 2370000 = 65536000 * 2370 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=33512000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute CTOS
+    execute LDU 4
+    execute SWAP
+    execute PUSHINT 1
+    execute AND
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute LDMSGADDR
+    execute DROP
+    execute SWAP
+    execute LDU 32
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute NOW
+    execute PUSH s8
+    execute SUB
+    execute PUSH s5
+    execute DIV/MOD 4
+    execute PUSH2 s0,s4
+    execute GREATER
+    execute PUSHCONT x3023
+    execute IF
+    execute DROP
+    execute PUSH s3
+    execute implicit RET
+    execute DUP
+    execute LESSINT 0
+    execute PUSHCONT x3070
+    execute IF
+    execute PUSH s9
+    execute MUL
+    execute PUSH2 s4,s9
+    execute MUL
+    execute PUSH s4
+    execute MUL
+    execute PUSHINT 10000
+    execute DIV/MOD 4
+    execute OVER
+    execute LESSINT 1
+    execute PUSHCONT x5B70
+    execute PUSHCONT xA0
+    execute IFELSE
+    execute ADD
+    execute implicit RET
+    execute PUSH2 s11,s10
+    execute SUB
+    execute SUB
+    execute PUSH s15
+    execute EQINT 1
+    execute IFREF (206CDFBC76E11D4AA2DFAF83526E82157F5BA24D75F55D7FEDAA324267BFA365)
+    execute PUSH s12
+    execute PUSH s17
+    execute SDEQ
+    execute PUSHCONT x5F0F5BDB31
+    execute IFNOTJMP
+    execute BLKDROP 15
+    execute 2DROP
+    execute RETALT
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:38.936000][mc-config.cpp:260]	needSpecialSmc flag set
+    [ 4][t 0][2023-02-23 16:27:38.936000][mc-config.cpp:266]	smc dictionary created
+    [ 4][t 0][2023-02-23 16:27:38.936000][mc-config.cpp:469]	workchain description dictionary created
+    [ 4][t 0][2023-02-23 16:27:38.936000][mc-config.cpp:1972]	unpacked info for workchain 0: basic=true, active=true, accept_msgs=true, min_split=0, max_split=6
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:128]	VM stack:
+     [ 81451 ] 
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:150]	VM log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:153]	VM stack:
+     [ CS{Cell{00c9801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b401004c4b400e625a018fde4f9800000000000400000008000004000000060} bits: 0..267; refs: 0..0} CS{Cell{00c9801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b401004c4b400e625a018fde4f9800000000000400000008000004000000060} bits: 267..534; refs: 0..0} 20000000 20000000 10000000 1677169638 0 0 1 2 0 1 1 ] 
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:154]	VM exit code: 0
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:155]	VM accepted: true
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:156]	VM success: true
+    [ 4][t 0][2023-02-23 16:27:38.936000][SmartContract.cpp:166]	output actions:
+    out_list_empty
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:166:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:173:25)
+
+  console.log
+    wallet 2 address: EQAze65lwxUmLMLwxu5auY1cqv2V_JpjidDt9d3fF0dgxQqc
+
+      at src/test/contract/tonease.spec.ts:42:17
+
+  console.log
+    {
+      address: EQDoN9yNZ1lsBW7lKEiNx73nGWJ7mzKRMTXWlAlGmRqj77P_,
+      send: [AsyncFunction: send]
+    }
+
+      at TonEase.<anonymous> (src/wrapper/tonease.ts:45:17)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.248000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.248000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.248000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:39.249000][transaction.cpp:596]	storage paid for a message: 22 cells, 7167 bits
+    [ 4][t 0][2023-02-23 16:27:39.249000][transaction.cpp:606]	computed fwd fees = 10367000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.249000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:39.249000][transaction.cpp:1003]	HASH(in_msg_state) = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF, account_state_hash = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.249000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.250000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 1000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999989633000 (null) ] CS{Cell{006dc00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.250000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.257000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.257000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.257000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.257000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999986050000ng
+    [ 4][t 0][2023-02-23 16:27:39.257000][transaction.cpp:1562]	storage paid for a message: 11 cells, 5415 bits
+    [ 4][t 0][2023-02-23 16:27:39.257000][transaction.cpp:1570]	computed fwd fees = 7515000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.257000][transaction.cpp:2304]	setting address rewriting info for newly-activated account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.272000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.273000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.273000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 0ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:39.273000][transaction.cpp:849]	gas limits: max=10000, limit=10000, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.273000][transaction.cpp:1003]	HASH(in_msg_state) = B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1, account_state_hash = B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.273000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.274000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 2000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 10000000 (null) ] CS{Cell{005fc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b100000000000000000000000000004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.275000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.275000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.275000][transaction.cpp:1077]	steps: 12 gas: used=559, max=10000, limit=10000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.275000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.275000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=9441000ng
+    [ 4][t 0][2023-02-23 16:27:39.276000][transaction.cpp:2304]	setting address rewriting info for newly-activated account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.320000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:194]	last_paid=1677169659; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999968535000ng ; last_trans_lt = 1000000..1000002)
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:596]	storage paid for a message: 2 cells, 432 bits
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:606]	computed fwd fees = 1632000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.321000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.322000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 3000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999966903000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fd800000000003d0909c0e35fa8b998761340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.322000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.322000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.322000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.322000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.322000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999963320000ng
+    [ 4][t 0][2023-02-23 16:27:39.322000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:39.323000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:194]	last_paid=1677169659; cells=12 bits=5514 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 9441000ng ; last_trans_lt = 2000000..2000001)
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:849]	gas limits: max=29441, limit=20000, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 4000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 29441000 (null) ] CS{Cell{026dc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b12188562831fbc9fd800000000007a1204e403ba1340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29441, limit=20000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.331000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28882000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.373000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.373000][transaction.cpp:194]	last_paid=1677169659; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.373000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999942320000ng ; last_trans_lt = 3000000..3000002)
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:596]	storage paid for a message: 2 cells, 723 bits
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:606]	computed fwd fees = 1923000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 5000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999940397000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fd80000000000b71b09c0e35fa85597e01340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.374000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.375000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.375000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.375000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.375000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999936814000ng
+    [ 4][t 0][2023-02-23 16:27:39.375000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:39.375000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:194]	last_paid=1677169659; cells=12 bits=5522 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 28882000ng ; last_trans_lt = 4000000..4000001)
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:849]	gas limits: max=36882, limit=8000, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 6000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 36882000 (null) ] CS{Cell{026fc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b12188564831fbc9fd80000000000f42405006e2d141340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.383000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.384000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.384000][transaction.cpp:1077]	steps: 193 gas: used=6593, max=36882, limit=8000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.384000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.384000][transaction.cpp:1110]	gas fees: 6593000 = 65536000 * 6593 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=30289000ng
+    [ 4][t 0][2023-02-23 16:27:39.384000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:39.384000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute CTOS
+    execute LDU 4
+    execute SWAP
+    execute PUSHINT 1
+    execute AND
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute LDMSGADDR
+    execute DROP
+    execute SWAP
+    execute LDU 32
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute NOW
+    execute PUSH s8
+    execute SUB
+    execute PUSH s5
+    execute DIV/MOD 4
+    execute PUSH2 s0,s4
+    execute GREATER
+    execute PUSHCONT x3023
+    execute IF
+    execute DROP
+    execute PUSH s3
+    execute implicit RET
+    execute DUP
+    execute LESSINT 0
+    execute PUSHCONT x3070
+    execute IF
+    execute PUSH s9
+    execute MUL
+    execute PUSH2 s4,s9
+    execute MUL
+    execute PUSH s4
+    execute MUL
+    execute PUSHINT 10000
+    execute DIV/MOD 4
+    execute OVER
+    execute LESSINT 1
+    execute PUSHCONT x5B70
+    execute PUSHCONT xA0
+    execute IFELSE
+    execute ADD
+    execute implicit RET
+    execute PUSH2 s11,s10
+    execute SUB
+    execute SUB
+    execute PUSH s15
+    execute EQINT 1
+    execute IFREF (206CDFBC76E11D4AA2DFAF83526E82157F5BA24D75F55D7FEDAA324267BFA365)
+    execute PUSH s15
+    execute EQINT 2
+    execute PUSHCONT x3E
+    execute IFREFELSE (9671E2B6A09C6331361633C8C88624A2B879E517CA7D1C30D99213A5A84AD534)
+    execute PUSH s16
+    execute PUSH3 s14,s13,s7
+    execute CALLDICT 3
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHINT 0
+    execute OVER
+    execute EQINT 0
+    execute PUSHCONT x5334C705923071DE
+    execute IF
+    execute PUSH2 s3,s4
+    execute SDEQ
+    execute PUSHCONT x3071
+    execute IF
+    execute DROP
+    execute PUSHINT 1
+    execute implicit RET
+    execute implicit RET
+    execute OVER
+    execute EQINT 1
+    execute PUSHCONT x5324C705923071DE
+    execute IF
+    execute OVER
+    execute EQINT 2
+    execute PUSHCONT x5124C7055034C70513B1927132DE
+    execute PUSHCONT x346C21
+    execute IFELSE
+    execute POP s4
+    execute BLKDROP2 2,1
+    execute implicit RET
+    execute EQINT 3
+    execute DROP
+    execute implicit RET
+    execute PUSHCONT x5F0F5BDB31
+    execute IFNOTJMP
+    execute PUSH s2
+    execute EQINT 1
+    execute NOT
+    execute PUSHCONT x5F0F5BDB31
+    execute IFJMP
+    execute XCHG s14
+    execute LDMSGADDR
+    execute DROP
+    execute PUSH2 s12,s0
+    execute SDEQ
+    execute PUSHCONT x5F0F5BDB31
+    execute IFJMP
+    execute PUSH s14
+    execute GTINT 0
+    execute PUSHCONT x3A70547CEFDB3C0A,1
+    execute IF
+    execute POP s10
+    execute PUSHINT 0
+    execute PUSH3 s12,s14,s15
+    execute CALLREF (38DEF072A544447F9F0D1FED6A1AB554C16E6402C5C8F6A20056746BD9082151)
+    execute DROP
+    execute PUSHINT 0
+    execute DUP
+    execute PUSHINT 24
+    execute NEWC
+    execute STU 6
+    execute XCHG2 s0,s4
+    execute STSLICER
+    execute ROT
+    execute STGRAMS
+    execute XCHG s1,s2
+    execute STU 107
+    execute STU 32
+    execute PUSHSLICE x46726F6D20534D
+    execute STSLICER
+    execute ENDC
+    execute PUSHINT 64
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute XCHG s10
+    execute implicit RET
+    execute PU2XC s13,s11,s-1
+    execute PUSH3 s12,s11,s10
+    execute PUSH3 s12,s11,s10
+    execute PUSH3 s12,s11,s10
+    execute PUSH s12
+    execute NEWC
+    execute XCHG2 s0,s13
+    execute STSLICER
+    execute XCHG2 s0,s11
+    execute STSLICER
+    execute XCHG2 s0,s9
+    execute STGRAMS
+    execute XCHG2 s0,s7
+    execute STGRAMS
+    execute XCHG2 s0,s5
+    execute STGRAMS
+    execute XCHG s1,s3
+    execute STU 32
+    execute STU 8
+    execute STU 8
+    execute STU 32
+    execute STU 32
+    execute STU 16
+    execute STU 8
+    execute STU 32
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+    execute PUSH s14
+    execute EQINT 3
+    execute implicit JMPREF
+    execute PUSHCONT x01C001B3945F0FDB31E0543EBA27F003945F0EDB31E12BC2008F51517BA1529C2DDB3C2AC2008E855449BCDB3C923A3AE2107A10691058700810471036454043307201C8500DCF16500BCF165009FA025007FA025005FA0213CB1FCB07CB07CB1FCB1FCB0FCB07CB1FC9ED54925F0EE2,2
+    execute PUSHCONT x5F0F30
+    execute IFELSE
+    execute BLKDROP 15
+    execute DROP
+    execute implicit RET
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.394000][transaction.cpp:320]	unpacking account 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5
+    [ 4][t 0][2023-02-23 16:27:39.394000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.394000][transaction.cpp:381]	end of Account.unpack() for 0:337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5 (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:39.394000][transaction.cpp:849]	gas limits: max=1000000, limit=20407, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.394000][transaction.cpp:1007]	in_msg_state is null
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:194]	last_paid=1677169659; cells=12 bits=5482 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 8882000ng ; last_trans_lt = 6000000..6000002)
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:849]	gas limits: max=28289, limit=19407, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 8000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 28289000 (null) ] CS{Cell{026dc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b1218855a831fbc9fd800000000016e3608e1e1d41340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1077]	steps: 12 gas: used=559, max=28289, limit=19407, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.398000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=27730000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.429000][mc-config.cpp:260]	needSpecialSmc flag set
+    [ 4][t 0][2023-02-23 16:27:39.429000][mc-config.cpp:266]	smc dictionary created
+    [ 4][t 0][2023-02-23 16:27:39.429000][mc-config.cpp:469]	workchain description dictionary created
+    [ 4][t 0][2023-02-23 16:27:39.429000][mc-config.cpp:1972]	unpacked info for workchain 0: basic=true, active=true, accept_msgs=true, min_split=0, max_split=6
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:128]	VM stack:
+     [ 81451 ] 
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:150]	VM log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:153]	VM stack:
+     [ CS{Cell{00c1801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df002de0e2c4d5b13d84ff15f3da1153aeed3e1ec7f2dc2ce590757459fdc28394489004c4b4000e625a018fde4f9c00000000000400000008000004000000060} bits: 0..267; refs: 0..0} CS{Cell{00c1801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df002de0e2c4d5b13d84ff15f3da1153aeed3e1ec7f2dc2ce590757459fdc28394489004c4b4000e625a018fde4f9c00000000000400000008000004000000060} bits: 267..534; refs: 0..0} 20000000 0 10000000 1677169639 0 0 1 2 0 1 1 ] 
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:154]	VM exit code: 0
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:155]	VM accepted: true
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:156]	VM success: true
+    [ 4][t 0][2023-02-23 16:27:39.429000][SmartContract.cpp:166]	output actions:
+    out_list_empty
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:166:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:173:25)
+
+  console.log
+    wallet 2 address: EQAze65lwxUmLMLwxu5auY1cqv2V_JpjidDt9d3fF0dgxQqc
+
+      at src/test/contract/tonease.spec.ts:42:17
+
+  console.log
+    {
+      address: EQDoN9yNZ1lsBW7lKEiNx73nGWJ7mzKRMTXWlAlGmRqj77P_,
+      send: [AsyncFunction: send]
+    }
+
+      at TonEase.<anonymous> (src/wrapper/tonease.ts:45:17)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.712000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.712000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.712000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:39.713000][transaction.cpp:596]	storage paid for a message: 22 cells, 7167 bits
+    [ 4][t 0][2023-02-23 16:27:39.713000][transaction.cpp:606]	computed fwd fees = 10367000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.713000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:39.713000][transaction.cpp:1003]	HASH(in_msg_state) = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF, account_state_hash = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.713000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.714000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 1000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999989633000 (null) ] CS{Cell{006dc00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.714000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.714000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.714000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.714000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.714000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999986050000ng
+    [ 4][t 0][2023-02-23 16:27:39.715000][transaction.cpp:1562]	storage paid for a message: 11 cells, 5415 bits
+    [ 4][t 0][2023-02-23 16:27:39.715000][transaction.cpp:1570]	computed fwd fees = 7515000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.715000][transaction.cpp:2304]	setting address rewriting info for newly-activated account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.726000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.726000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.726000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 0ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:39.726000][transaction.cpp:849]	gas limits: max=10000, limit=10000, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1003]	HASH(in_msg_state) = B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1, account_state_hash = B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 2000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 10000000 (null) ] CS{Cell{005fc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b100000000000000000000000000004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1077]	steps: 12 gas: used=559, max=10000, limit=10000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=9441000ng
+    [ 4][t 0][2023-02-23 16:27:39.727000][transaction.cpp:2304]	setting address rewriting info for newly-activated account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.773000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.773000][transaction.cpp:194]	last_paid=1677169659; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.773000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999968535000ng ; last_trans_lt = 1000000..1000002)
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:596]	storage paid for a message: 2 cells, 432 bits
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:606]	computed fwd fees = 1632000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 3000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999966903000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fd800000000003d0909c0e35fa8b998761340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.774000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.775000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.775000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.775000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.775000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999963320000ng
+    [ 4][t 0][2023-02-23 16:27:39.775000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:39.775000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:194]	last_paid=1677169659; cells=12 bits=5514 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 9441000ng ; last_trans_lt = 2000000..2000001)
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:849]	gas limits: max=29441, limit=20000, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 4000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 29441000 (null) ] CS{Cell{026dc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b12188562831fbc9fd800000000007a1204e403ba1340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.784000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.785000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.785000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29441, limit=20000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.785000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.785000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28882000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:194]	last_paid=1677169659; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999942320000ng ; last_trans_lt = 3000000..3000002)
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:596]	storage paid for a message: 2 cells, 723 bits
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:606]	computed fwd fees = 1923000 + 0
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.846000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.847000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 5000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999940397000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fd80000000000b71b09c0e35fa85597e01340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999936814000ng
+    [ 4][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:39.847000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.856000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.856000][transaction.cpp:194]	last_paid=1677169659; cells=12 bits=5522 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.856000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 28882000ng ; last_trans_lt = 4000000..4000001)
+    [ 4][t 0][2023-02-23 16:27:39.856000][transaction.cpp:849]	gas limits: max=36882, limit=8000, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.856000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.856000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.857000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 6000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 36882000 (null) ] CS{Cell{026fc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b12188564831fbc9fd80000000000f42405006e2d141340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1077]	steps: 193 gas: used=6593, max=36882, limit=8000, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1110]	gas fees: 6593000 = 65536000 * 6593 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=30289000ng
+    [ 4][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:39.857000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute CTOS
+    execute LDU 4
+    execute SWAP
+    execute PUSHINT 1
+    execute AND
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute LDMSGADDR
+    execute DROP
+    execute SWAP
+    execute LDU 32
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute NOW
+    execute PUSH s8
+    execute SUB
+    execute PUSH s5
+    execute DIV/MOD 4
+    execute PUSH2 s0,s4
+    execute GREATER
+    execute PUSHCONT x3023
+    execute IF
+    execute DROP
+    execute PUSH s3
+    execute implicit RET
+    execute DUP
+    execute LESSINT 0
+    execute PUSHCONT x3070
+    execute IF
+    execute PUSH s9
+    execute MUL
+    execute PUSH2 s4,s9
+    execute MUL
+    execute PUSH s4
+    execute MUL
+    execute PUSHINT 10000
+    execute DIV/MOD 4
+    execute OVER
+    execute LESSINT 1
+    execute PUSHCONT x5B70
+    execute PUSHCONT xA0
+    execute IFELSE
+    execute ADD
+    execute implicit RET
+    execute PUSH2 s11,s10
+    execute SUB
+    execute SUB
+    execute PUSH s15
+    execute EQINT 1
+    execute IFREF (206CDFBC76E11D4AA2DFAF83526E82157F5BA24D75F55D7FEDAA324267BFA365)
+    execute PUSH s15
+    execute EQINT 2
+    execute PUSHCONT x3E
+    execute IFREFELSE (9671E2B6A09C6331361633C8C88624A2B879E517CA7D1C30D99213A5A84AD534)
+    execute PUSH s16
+    execute PUSH3 s14,s13,s7
+    execute CALLDICT 3
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHINT 0
+    execute OVER
+    execute EQINT 0
+    execute PUSHCONT x5334C705923071DE
+    execute IF
+    execute PUSH2 s3,s4
+    execute SDEQ
+    execute PUSHCONT x3071
+    execute IF
+    execute DROP
+    execute PUSHINT 1
+    execute implicit RET
+    execute implicit RET
+    execute OVER
+    execute EQINT 1
+    execute PUSHCONT x5324C705923071DE
+    execute IF
+    execute OVER
+    execute EQINT 2
+    execute PUSHCONT x5124C7055034C70513B1927132DE
+    execute PUSHCONT x346C21
+    execute IFELSE
+    execute POP s4
+    execute BLKDROP2 2,1
+    execute implicit RET
+    execute EQINT 3
+    execute DROP
+    execute implicit RET
+    execute PUSHCONT x5F0F5BDB31
+    execute IFNOTJMP
+    execute PUSH s2
+    execute EQINT 1
+    execute NOT
+    execute PUSHCONT x5F0F5BDB31
+    execute IFJMP
+    execute XCHG s14
+    execute LDMSGADDR
+    execute DROP
+    execute PUSH2 s12,s0
+    execute SDEQ
+    execute PUSHCONT x5F0F5BDB31
+    execute IFJMP
+    execute PUSH s14
+    execute GTINT 0
+    execute PUSHCONT x3A70547CEFDB3C0A,1
+    execute IF
+    execute POP s10
+    execute PUSHINT 0
+    execute PUSH3 s12,s14,s15
+    execute CALLREF (38DEF072A544447F9F0D1FED6A1AB554C16E6402C5C8F6A20056746BD9082151)
+    execute DROP
+    execute PUSHINT 0
+    execute DUP
+    execute PUSHINT 24
+    execute NEWC
+    execute STU 6
+    execute XCHG2 s0,s4
+    execute STSLICER
+    execute ROT
+    execute STGRAMS
+    execute XCHG s1,s2
+    execute STU 107
+    execute STU 32
+    execute PUSHSLICE x46726F6D20534D
+    execute STSLICER
+    execute ENDC
+    execute PUSHINT 64
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute XCHG s10
+    execute implicit RET
+    execute PU2XC s13,s11,s-1
+    execute PUSH3 s12,s11,s10
+    execute PUSH3 s12,s11,s10
+    execute PUSH3 s12,s11,s10
+    execute PUSH s12
+    execute NEWC
+    execute XCHG2 s0,s13
+    execute STSLICER
+    execute XCHG2 s0,s11
+    execute STSLICER
+    execute XCHG2 s0,s9
+    execute STGRAMS
+    execute XCHG2 s0,s7
+    execute STGRAMS
+    execute XCHG2 s0,s5
+    execute STGRAMS
+    execute XCHG s1,s3
+    execute STU 32
+    execute STU 8
+    execute STU 8
+    execute STU 32
+    execute STU 32
+    execute STU 16
+    execute STU 8
+    execute STU 32
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+    execute PUSH s14
+    execute EQINT 3
+    execute implicit JMPREF
+    execute PUSHCONT x01C001B3945F0FDB31E0543EBA27F003945F0EDB31E12BC2008F51517BA1529C2DDB3C2AC2008E855449BCDB3C923A3AE2107A10691058700810471036454043307201C8500DCF16500BCF165009FA025007FA025005FA0213CB1FCB07CB07CB1FCB1FCB0FCB07CB1FC9ED54925F0EE2,2
+    execute PUSHCONT x5F0F30
+    execute IFELSE
+    execute BLKDROP 15
+    execute DROP
+    execute implicit RET
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.865000][transaction.cpp:320]	unpacking account 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5
+    [ 4][t 0][2023-02-23 16:27:39.865000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.865000][transaction.cpp:381]	end of Account.unpack() for 0:337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5 (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:39.865000][transaction.cpp:849]	gas limits: max=1000000, limit=20407, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.865000][transaction.cpp:1007]	in_msg_state is null
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:320]	unpacking account B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:194]	last_paid=1677169659; cells=12 bits=5482 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:381]	end of Account.unpack() for 0:B2ECD33F3B0E142B6BD022205C89B6ECDF70B9E65DDC527AE68B54093B22E7B1 (balance = 8882000ng ; last_trans_lt = 6000000..6000002)
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:849]	gas limits: max=28289, limit=19407, credit=0
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169659 55834626422 8000000 12693240617155586073755470517215406643156393467819259424509877721739068813674 [ 28289000 (null) ] CS{Cell{026dc00b2ecd33f3b0e142b6bd022205c89b6ecdf70b9e65ddc527ae68b54093b22e7b1218855a831fbc9fd800000000016e3608e1e1d41340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1077]	steps: 12 gas: used=559, max=28289, limit=19407, credit=0
+    [ 3][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:39.869000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=27730000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:39.904000][mc-config.cpp:260]	needSpecialSmc flag set
+    [ 4][t 0][2023-02-23 16:27:39.904000][mc-config.cpp:266]	smc dictionary created
+    [ 4][t 0][2023-02-23 16:27:39.904000][mc-config.cpp:469]	workchain description dictionary created
+    [ 4][t 0][2023-02-23 16:27:39.904000][mc-config.cpp:1972]	unpacked info for workchain 0: basic=true, active=true, accept_msgs=true, min_split=0, max_split=6
+    [ 4][t 0][2023-02-23 16:27:39.904000][SmartContract.cpp:128]	VM stack:
+     [ 81451 ] 
+    [ 4][t 0][2023-02-23 16:27:39.904000][SmartContract.cpp:150]	VM log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+    [ 4][t 0][2023-02-23 16:27:39.905000][SmartContract.cpp:153]	VM stack:
+     [ CS{Cell{00c1801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df002de0e2c4d5b13d84ff15f3da1153aeed3e1ec7f2dc2ce590757459fdc28394489004c4b4000e625a018fde4f9c00000000000400000008000004000000060} bits: 0..267; refs: 0..0} CS{Cell{00c1801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df002de0e2c4d5b13d84ff15f3da1153aeed3e1ec7f2dc2ce590757459fdc28394489004c4b4000e625a018fde4f9c00000000000400000008000004000000060} bits: 267..534; refs: 0..0} 20000000 0 10000000 1677169639 0 0 1 2 0 1 1 ] 
+    [ 4][t 0][2023-02-23 16:27:39.905000][SmartContract.cpp:154]	VM exit code: 0
+    [ 4][t 0][2023-02-23 16:27:39.905000][SmartContract.cpp:155]	VM accepted: true
+    [ 4][t 0][2023-02-23 16:27:39.905000][SmartContract.cpp:156]	VM success: true
+    [ 4][t 0][2023-02-23 16:27:39.905000][SmartContract.cpp:166]	output actions:
+    out_list_empty
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:166:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:173:25)
+
+  console.log
+    wallet 2 address: EQAze65lwxUmLMLwxu5auY1cqv2V_JpjidDt9d3fF0dgxQqc
+
+      at src/test/contract/tonease.spec.ts:42:17
+
+  console.log
+    {
+      address: EQDoN9yNZ1lsBW7lKEiNx73nGWJ7mzKRMTXWlAlGmRqj77P_,
+      send: [AsyncFunction: send]
+    }
+
+      at TonEase.<anonymous> (src/wrapper/tonease.ts:45:17)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.238000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:40.238000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.238000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:40.239000][transaction.cpp:596]	storage paid for a message: 22 cells, 7167 bits
+    [ 4][t 0][2023-02-23 16:27:40.239000][transaction.cpp:606]	computed fwd fees = 10367000 + 0
+    [ 4][t 0][2023-02-23 16:27:40.239000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:40.239000][transaction.cpp:1003]	HASH(in_msg_state) = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF, account_state_hash = E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:40.239000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.240000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 1000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999989633000 (null) ] CS{Cell{006dc00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef000000000000000000000000001c0e35fa931a00004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.240000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.241000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.241000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.241000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.241000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999986050000ng
+    [ 4][t 0][2023-02-23 16:27:40.241000][transaction.cpp:1562]	storage paid for a message: 11 cells, 5415 bits
+    [ 4][t 0][2023-02-23 16:27:40.241000][transaction.cpp:1570]	computed fwd fees = 7515000 + 0
+    [ 4][t 0][2023-02-23 16:27:40.241000][transaction.cpp:2304]	setting address rewriting info for newly-activated account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.253000][transaction.cpp:320]	unpacking account AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9
+    [ 4][t 0][2023-02-23 16:27:40.253000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.253000][transaction.cpp:381]	end of Account.unpack() for 0:AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9 (balance = 0ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:40.253000][transaction.cpp:849]	gas limits: max=10000, limit=10000, credit=0
+    [ 4][t 0][2023-02-23 16:27:40.253000][transaction.cpp:1003]	HASH(in_msg_state) = AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9, account_state_hash = AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9
+    [ 4][t 0][2023-02-23 16:27:40.253000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.254000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 2000000 77057302297091096954566153823553268655160391332357074493504361465918025563337 [ 10000000 (null) ] CS{Cell{005fc00ae4f1d41f84beef56960faabe42f04c2b1e4ac1be7871e4ff7465e82ffee2aa900000000000000000000000000004} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.254000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.255000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.255000][transaction.cpp:1077]	steps: 12 gas: used=559, max=10000, limit=10000, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.255000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.255000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=9441000ng
+    [ 4][t 0][2023-02-23 16:27:40.255000][transaction.cpp:2304]	setting address rewriting info for newly-activated account AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9 with split_depth=0, orig_addr_rewrite=
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.296000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:40.296000][transaction.cpp:194]	last_paid=1677169660; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.296000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999968535000ng ; last_trans_lt = 1000000..1000002)
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:596]	storage paid for a message: 2 cells, 432 bits
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:606]	computed fwd fees = 1632000 + 0
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 3000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999966903000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fe000000000003d0909c0e35fa8b998761340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.297000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.298000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.298000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.298000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.298000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999963320000ng
+    [ 4][t 0][2023-02-23 16:27:40.298000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:40.298000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.306000][transaction.cpp:320]	unpacking account AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9
+    [ 4][t 0][2023-02-23 16:27:40.306000][transaction.cpp:194]	last_paid=1677169660; cells=12 bits=5514 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.306000][transaction.cpp:381]	end of Account.unpack() for 0:AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9 (balance = 9441000ng ; last_trans_lt = 2000000..2000001)
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:849]	gas limits: max=29441, limit=20000, credit=0
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 4000000 77057302297091096954566153823553268655160391332357074493504361465918025563337 [ 29441000 (null) ] CS{Cell{026dc00ae4f1d41f84beef56960faabe42f04c2b1e4ac1be7871e4ff7465e82ffee2aa92188562831fbc9fe000000000007a1204e403ba1340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29441, limit=20000, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.307000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28882000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.345000][transaction.cpp:320]	unpacking account E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF
+    [ 4][t 0][2023-02-23 16:27:40.345000][transaction.cpp:194]	last_paid=1677169660; cells=10 bits=1453 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.345000][transaction.cpp:381]	end of Account.unpack() for 0:E837DC8D67596C056EE528488DC7BDE719627B9B32913135D6940946991AA3EF (balance = 999999942320000ng ; last_trans_lt = 3000000..3000002)
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:596]	storage paid for a message: 2 cells, 456 bits
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:606]	computed fwd fees = 1656000 + 0
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:849]	gas limits: max=1000000, limit=0, credit=10000
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 5000000 6499489474569925422636628259714871337121397885710666124050175141469882863186 [ 999999940664000 (null) ] CS{Cell{0275c00e837dc8d67596c056ee528488dc7bde719627b9b32913135d6940946991aa3ef214816b431fbc9fe00000000000b71b09c0e35fa85597e01340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.346000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.347000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.347000][transaction.cpp:1077]	steps: 77 gas: used=3583, max=1000000, limit=1000000, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.347000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.347000][transaction.cpp:1110]	gas fees: 3583000 = 65536000 * 3583 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=999999937081000ng
+    [ 4][t 0][2023-02-23 16:27:40.347000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:40.347000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHPOW2 9
+    execute LDSLICEX
+    execute DUP
+    execute LDU 32
+    execute LDU 32
+    execute LDU 32
+    execute XCHG s2
+    execute NOW
+    execute LEQ
+    execute THROWIF 35
+    execute PUSH c4
+    execute CTOS
+    execute LDU 32
+    execute LDU 32
+    execute LDU 256
+    execute ENDS
+    execute XCPU s3,s2
+    execute EQUAL
+    execute THROWIFNOT 33
+    execute XCPU s4,s4
+    execute EQUAL
+    execute THROWIFNOT 34
+    execute XCHG s4
+    execute HASHSU
+    execute XC2PU s0,s5,s5
+    execute CHKSIGNU
+    execute THROWIFNOT 35
+    execute LDDICT
+    execute ENDS
+    execute ACCEPT
+    changing gas limit to 1000000
+    execute PUSHINT -1
+    execute PUSHCONT x218010F4786FA5209802D307D43001FB009132E201B3
+    execute UNTIL
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute XCHG s2
+    execute LDU 8
+    execute LDREF
+    execute DROP
+    execute SWAP
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    execute OVER
+    execute PUSHINT 16
+    execute DICTIGETNEXT
+    execute NULLSWAPIFNOT2
+    execute DUP
+    execute PUSHCONT x02D307D43001FB00
+    execute PUSHCONT x32
+    execute IFELSE
+    execute POP s2
+    execute implicit RET
+    execute SWAP
+    execute NOT
+    execute implicit RET
+    until loop body end
+    until loop terminated
+    execute 2DROP
+    execute SWAP
+    execute INC
+    execute NEWC
+    execute STU 32
+    execute STU 32
+    execute STU 256
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:320]	unpacking account AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:194]	last_paid=1677169660; cells=12 bits=5522 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:381]	end of Account.unpack() for 0:AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9 (balance = 28882000ng ; last_trans_lt = 4000000..4000001)
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:849]	gas limits: max=37882, limit=9000, credit=0
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 6000000 77057302297091096954566153823553268655160391332357074493504361465918025563337 [ 37882000 (null) ] CS{Cell{026fc00ae4f1d41f84beef56960faabe42f04c2b1e4ac1be7871e4ff7465e82ffee2aa92188564831fbc9fe00000000000f42405006e2d141340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.357000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.358000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.358000][transaction.cpp:1077]	steps: 200 gas: used=6574, max=37882, limit=9000, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.358000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.358000][transaction.cpp:1110]	gas fees: 6574000 = 65536000 * 6574 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=31308000ng
+    [ 4][t 0][2023-02-23 16:27:40.358000][transaction.cpp:1562]	storage paid for a message: 0 cells, 0 bits
+    [ 4][t 0][2023-02-23 16:27:40.358000][transaction.cpp:1570]	computed fwd fees = 1000000 + 0
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute CTOS
+    execute LDU 4
+    execute SWAP
+    execute PUSHINT 1
+    execute AND
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute LDMSGADDR
+    execute DROP
+    execute SWAP
+    execute LDU 32
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute NOW
+    execute PUSH s8
+    execute SUB
+    execute PUSH s5
+    execute DIV/MOD 4
+    execute PUSH2 s0,s4
+    execute GREATER
+    execute PUSHCONT x3023
+    execute IF
+    execute DROP
+    execute PUSH s3
+    execute implicit RET
+    execute DUP
+    execute LESSINT 0
+    execute PUSHCONT x3070
+    execute IF
+    execute PUSH s9
+    execute MUL
+    execute PUSH2 s4,s9
+    execute MUL
+    execute PUSH s4
+    execute MUL
+    execute PUSHINT 10000
+    execute DIV/MOD 4
+    execute OVER
+    execute LESSINT 1
+    execute PUSHCONT x5B70
+    execute PUSHCONT xA0
+    execute IFELSE
+    execute ADD
+    execute implicit RET
+    execute PUSH2 s11,s10
+    execute SUB
+    execute SUB
+    execute PUSH s15
+    execute EQINT 1
+    execute IFREF (206CDFBC76E11D4AA2DFAF83526E82157F5BA24D75F55D7FEDAA324267BFA365)
+    execute PUSH s15
+    execute EQINT 2
+    execute PUSHCONT x3E
+    execute IFREFELSE (9671E2B6A09C6331361633C8C88624A2B879E517CA7D1C30D99213A5A84AD534)
+    execute POP s14
+    execute implicit RET
+    execute PUSH s14
+    execute EQINT 3
+    execute implicit JMPREF
+    execute PUSHCONT x01C001B3945F0FDB31E0543EBA27F003945F0EDB31E12BC2008F51517BA1529C2DDB3C2AC2008E855449BCDB3C923A3AE2107A10691058700810471036454043307201C8500DCF16500BCF165009FA025007FA025005FA0213CB1FCB07CB07CB1FCB1FCB0FCB07CB1FC9ED54925F0EE2,2
+    execute PUSHCONT x5F0F30
+    execute IFELSE
+    execute SWAP
+    execute EQINT 1
+    execute NOT
+    execute PUSHCONT x5F0FDB31
+    execute IFJMP
+    execute XCPU2 s14,s11,s10
+    execute PUSH s7
+    execute CALLDICT 3
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSHINT 0
+    execute OVER
+    execute EQINT 0
+    execute PUSHCONT x5334C705923071DE
+    execute IF
+    execute PUSH2 s3,s4
+    execute SDEQ
+    execute PUSHCONT x3071
+    execute IF
+    execute DROP
+    execute PUSHINT 1
+    execute implicit RET
+    execute implicit RET
+    execute OVER
+    execute EQINT 1
+    execute PUSHCONT x5324C705923071DE
+    execute IF
+    execute OVER
+    execute EQINT 2
+    execute PUSHCONT x5124C7055034C70513B1927132DE
+    execute PUSHCONT x346C21
+    execute IFELSE
+    execute POP s4
+    execute BLKDROP2 2,1
+    execute implicit RET
+    execute EQINT 3
+    execute DROP
+    execute implicit RET
+    execute PUSHCONT x5F0EDB31
+    execute IFNOTJMP
+    execute PUSH s11
+    execute GTINT 0
+    execute PUSHCONT x517BA1529C2DDB3C2AC2008E855449BCDB3C923A3AE2107A10691058700810471036454043307201C8500DCF16500BCF165009FA025007FA025005FA0213CB1FCB07CB07CB1FCB1FCB0FCB07CB1FC9ED54,2
+    execute PUSHCONT x5F0E
+    execute IFELSE
+    execute XCPU s7,s11
+    execute SUB
+    execute PUXC s9,s11
+    execute PUSH s13
+    execute CALLREF (38DEF072A544447F9F0D1FED6A1AB554C16E6402C5C8F6A20056746BD9082151)
+    execute DROP
+    execute PUSHINT 0
+    execute DUP
+    execute PUSHINT 24
+    execute NEWC
+    execute STU 6
+    execute XCHG2 s0,s4
+    execute STSLICER
+    execute ROT
+    execute STGRAMS
+    execute XCHG s1,s2
+    execute STU 107
+    execute STU 32
+    execute PUSHSLICE x46726F6D20534D
+    execute STSLICER
+    execute ENDC
+    execute PUSHINT 64
+    execute SENDRAWMSG
+    installing an output action
+    execute implicit RET
+    execute PUSH s10
+    execute GTINT 0
+    execute PUSHCONT x5449BCDB3C,1
+    execute PUSHCONT x3A3A
+    execute IFELSE
+    execute POP s10
+    execute POP s10
+    execute implicit RET
+    execute XCHG s7,s10
+    execute XCHG s6,s9
+    execute XCHG s5,s8
+    execute PUSHINT 0
+    execute XCHG s8
+    execute XCHG s4,s7
+    execute XCHG s3,s6
+    execute XCHG3 s5,s4,s0
+    execute XCHG3 s3,s3,s0
+    execute PUSHINT 2
+    execute SWAP
+    execute NEWC
+    execute XCHG2 s0,s13
+    execute STSLICER
+    execute XCHG2 s0,s11
+    execute STSLICER
+    execute XCHG2 s0,s9
+    execute STGRAMS
+    execute XCHG2 s0,s7
+    execute STGRAMS
+    execute XCHG2 s0,s5
+    execute STGRAMS
+    execute XCHG s1,s3
+    execute STU 32
+    execute STU 8
+    execute STU 8
+    execute STU 32
+    execute STU 32
+    execute STU 16
+    execute STU 8
+    execute STU 32
+    execute ENDC
+    execute POP c4
+    execute implicit RET
+    execute implicit RET
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.367000][transaction.cpp:320]	unpacking account 337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5
+    [ 4][t 0][2023-02-23 16:27:40.367000][transaction.cpp:194]	last_paid=0; cells=0 bits=0 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.367000][transaction.cpp:381]	end of Account.unpack() for 0:337BAE65C315262CC2F0C6EE5AB98D5CAAFD95FC9A6389D0EDF5DDDF174760C5 (balance = 1000000000000000ng ; last_trans_lt = 0..0)
+    [ 4][t 0][2023-02-23 16:27:40.367000][transaction.cpp:849]	gas limits: max=1000000, limit=21426, credit=0
+    [ 4][t 0][2023-02-23 16:27:40.367000][transaction.cpp:1007]	in_msg_state is null
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.372000][transaction.cpp:320]	unpacking account AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9
+    [ 4][t 0][2023-02-23 16:27:40.372000][transaction.cpp:194]	last_paid=1677169660; cells=12 bits=5482 public_cells=0
+    [ 4][t 0][2023-02-23 16:27:40.372000][transaction.cpp:381]	end of Account.unpack() for 0:AE4F1D41F84BEEF56960FAABE42F04C2B1E4AC1BE7871E4FF7465E82FFEE2AA9 (balance = 8882000ng ; last_trans_lt = 6000000..6000002)
+    [ 4][t 0][2023-02-23 16:27:40.372000][transaction.cpp:849]	gas limits: max=29308, limit=20426, credit=0
+    [ 4][t 0][2023-02-23 16:27:40.372000][transaction.cpp:1007]	in_msg_state is null
+    [ 4][t 0][2023-02-23 16:27:40.372000][transaction.cpp:1039]	creating VM
+    [ 4][t 0][2023-02-23 16:27:40.373000][transaction.cpp:910]	SmartContractInfo initialized with [ 124711402 0 0 1677169660 55834626422 8000000 77057302297091096954566153823553268655160391332357074493504361465918025563337 [ 29308000 (null) ] CS{Cell{026dc00ae4f1d41f84beef56960faabe42f04c2b1e4ac1be7871e4ff7465e82ffee2aa9218855a831fbc9fe000000000016e3608e1e1d41340} bits: 1..268; refs: 0..0} C{DB8A7C0E698F2584A5A48014416C15859908AEE5F1C3215AB173D81F9C929DA2} ]
+    [ 4][t 0][2023-02-23 16:27:40.373000][transaction.cpp:1060]	starting VM
+    [ 4][t 0][2023-02-23 16:27:40.373000][transaction.cpp:1063]	VM terminated with exit code 0
+    [ 3][t 0][2023-02-23 16:27:40.373000][transaction.cpp:1077]	steps: 12 gas: used=559, max=29308, limit=20426, credit=0
+    [ 3][t 0][2023-02-23 16:27:40.373000][transaction.cpp:1079]	out_of_gas=false, accepted=true, success=true
+    [ 4][t 0][2023-02-23 16:27:40.373000][transaction.cpp:1110]	gas fees: 559000 = 65536000 * 559 /2^16 ; price=65536000; flat rate=[100000 for 100]; remaining balance=28749000ng
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:131:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute SAVECTR c2
+    execute SAMEALTSAVE
+    execute POP s2
+    execute OVER
+    execute SEMPTY
+    execute PUSHCONT x5B
+    execute IFJMP
+    execute 2DROP
+    execute implicit RET
+
+      at SmartContract.receiveMessage (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:139:25)
+
+  console.log
+    [ 4][t 0][2023-02-23 16:27:40.405000][mc-config.cpp:260]	needSpecialSmc flag set
+    [ 4][t 0][2023-02-23 16:27:40.405000][mc-config.cpp:266]	smc dictionary created
+    [ 4][t 0][2023-02-23 16:27:40.405000][mc-config.cpp:469]	workchain description dictionary created
+    [ 4][t 0][2023-02-23 16:27:40.405000][mc-config.cpp:1972]	unpacked info for workchain 0: basic=true, active=true, accept_msgs=true, min_split=0, max_split=6
+    [ 4][t 0][2023-02-23 16:27:40.405000][SmartContract.cpp:128]	VM stack:
+     [ 81451 ] 
+    [ 4][t 0][2023-02-23 16:27:40.405000][SmartContract.cpp:150]	VM log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+    [ 4][t 0][2023-02-23 16:27:40.406000][SmartContract.cpp:153]	VM stack:
+     [ CS{Cell{00c1801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b4000e625a018fde4fa000000000000400000008000008000000060} bits: 0..267; refs: 0..0} CS{Cell{00c1801d06fb91aceb2d80addca50911b8f7bce32c4f7366522626bad28128d323547df000cdeeb9970c5498b30bc31bb96ae63572abf657f2698e2743b7d7777c5d1d8315004c4b4000e625a018fde4fa000000000000400000008000008000000060} bits: 267..534; refs: 0..0} 20000000 0 10000000 1677169640 0 0 1 2 0 2 1 ] 
+    [ 4][t 0][2023-02-23 16:27:40.406000][SmartContract.cpp:154]	VM exit code: 0
+    [ 4][t 0][2023-02-23 16:27:40.406000][SmartContract.cpp:155]	VM accepted: true
+    [ 4][t 0][2023-02-23 16:27:40.406000][SmartContract.cpp:156]	VM success: true
+    [ 4][t 0][2023-02-23 16:27:40.406000][SmartContract.cpp:166]	output actions:
+    out_list_empty
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:166:25)
+
+  console.log
+    execute SETCP 0
+    execute DICTPUSHCONST 19 (xC_,1)
+    execute DICTIGETJMPZ
+    execute PUSH c4
+    execute CTOS
+    execute LDMSGADDR
+    execute LDMSGADDR
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDGRAMS
+    execute LDU 32
+    execute LDU 8
+    execute LDU 8
+    execute LDU 32
+    execute LDU 32
+    execute LDU 16
+    execute LDU 8
+    execute LDU 32
+    execute DROP
+    execute implicit RET
+
+      at SmartContract.get (node_modules/@ton-community/sandbox/dist/blockchain/SmartContract.js:173:25)
+
