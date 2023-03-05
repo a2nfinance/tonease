@@ -4,7 +4,7 @@ TonEase allow users create batch payments with many options, such as instant pay
 
 TonEase works not only on web browsers but also in Telegram as a **TWA**.
 
-Web URL: [TonEase](https://tonease.a2n.finance) (run on Mainnet only)
+Web URL: [TonEase](https://tonease.a2n.finance) (Mainnet)
 
 Telegram Chatbot ID: **@tonease**
 

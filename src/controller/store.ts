@@ -8,11 +8,6 @@ import processReducer from 'src/controller/process/processSlice';
 import batchPaymentReducer from "src/controller/batch-payment/batchPaymentSlice";
 import invoiceReducer from './invoice/invoiceSlice';
 
-// const persistConfig = {
-//     key: 'network',
-//     storage,
-// }
-// const network = persistReducer(persistConfig, networkReducer)
 export function makeStore() {
     return configureStore({
         reducer: {
